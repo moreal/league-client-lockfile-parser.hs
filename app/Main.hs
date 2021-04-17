@@ -1,6 +1,8 @@
 module Main where
 
-import Lib
+import LeagueClient ( parseLockFile )
 
 main :: IO ()
-main = someFunc
+main = do
+    lockfileContent <- getLine
+    print $ parseLockFile lockfileContent
