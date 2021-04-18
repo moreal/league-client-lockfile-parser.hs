@@ -47,4 +47,4 @@ tests:
     dependencies:
     - league-client-lockfile-parser
     - hspec >= 2.7.10 && < 3
-    - hspec-discover
+    - hspec-discover >= 2.7.10 && < 3
