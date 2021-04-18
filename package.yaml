@@ -46,5 +46,5 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - league-client-lockfile-parser
-    - hspec >= 2.7.10 && < 3
-    - hspec-discover >= 2.7.10 && < 3
+    - hspec >= 2.7.8 && < 3
+    - hspec-discover >= 2.7.8 && < 3
