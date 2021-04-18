@@ -26,7 +26,7 @@ library:
   source-dirs: src
 
 executables:
-  league-client-exe:
+  league-client-lockfile-parser-exe:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
@@ -34,10 +34,10 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - league-client
+    - league-client-lockfile-parser
 
 tests:
-  league-client-test:
+  league-client-lockfile-parser-test:
     main:                Spec.hs
     source-dirs:         test
     ghc-options:
@@ -45,6 +45,6 @@ tests:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - league-client
+    - league-client-lockfile-parser
     - hspec >= 2.7.10 && < 3
     - hspec-discover
