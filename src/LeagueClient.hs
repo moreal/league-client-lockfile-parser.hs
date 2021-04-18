@@ -1,7 +1,7 @@
 module LeagueClient
     (
       parseLockFile
-    , LeagueClientLockfile
+    , LeagueClientLockfile(..)
     ) where
 
 import Data.List
@@ -16,7 +16,7 @@ data LeagueClientLockfile = LeagueClientLockfile
     ,   port :: Int
     ,   password :: String
     ,   protocol :: String
-    }
+    } deriving (Eq)
 
 instance Show LeagueClientLockfile where
    show (LeagueClientLockfile name processId port password protocol) = intercalate ":" [name, show processId, show port, password, protocol]
